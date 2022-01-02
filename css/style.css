@@ -1,0 +1,517 @@
+/* 
+الاسم : سحر ابراهيم أبو معيلق
+2/1/2022
+ */
+
+ *{
+     margin: 0; padding: 0; box-sizing: border-box;
+ }
+ .container{
+     width: 80%;
+ }
+ .flex-row{
+     display: flex;
+ }
+ .flex-col{
+     display: flex;
+     flex-direction: column;
+ }
+ @font-face {
+     font-family: JF;
+     src: url(../fonts/JF-Flat-regular.ttf);
+ }
+ body{
+     font-family: JF;
+     background-color: #e9ecef;
+ }
+
+ /* navBar Section start */
+ .navBarSection{
+     background-color: #1e4355;
+     height: 13vh;
+     border-radius: 0 0 20px 20px;
+}
+ .navBarSection img{
+     width:100%;
+     height:10vh;
+ }
+ .navBarSection .navbar-brand{
+     margin-left: 20px;
+ }
+ .navBarSection .search{
+    width: 400px;
+    background-color: #2b5468;
+    border-radius: 50px;
+    color: #fff;
+    padding: 5px 40px;
+    border: none;
+}
+.navBarSection .search::placeholder{
+    color: #fff;
+}
+.navBarSection form{
+    position: relative;
+    margin-left: 40px;
+}
+.navBarSection .fa-search{
+    color: #fff;
+    position: absolute;
+    right: 20px;
+}
+.navBarSection .navbar-nav{
+    font-size: 18px;
+}
+@media (min-width:320px) and (max-width:767px) {
+    span.navbar-toggler-icon{
+        color: #fff;
+    }
+    .navbar-nav{
+        width: 100%;
+        background-color: #fff;
+        text-align: right;
+        padding: 20px;
+        position: absolute;
+        z-index: 3;
+    }
+    .navbar-collapse{
+        width: 100%;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px){
+    span.navbar-toggler-icon{
+        color: #fff;
+    }
+    .navbar-nav{
+        width: 100%;
+        background-color: #fff;
+        text-align: right;
+        padding: 20px;
+        position: absolute;
+        z-index: 3;
+    }
+    .navbar-collapse{
+        width: 100%;
+    }
+}
+.navBarSection .navbar-nav li{
+    margin-left: 10px;
+    border-bottom: 1px solid transparent;
+    transition: 0.5s;
+}
+@media (min-width:320px) and (max-width:767px){
+    .navBarSection .navbar-nav li{
+        padding: 0 10px;
+    } 
+}
+.navBarSection .navbar-nav li:hover{
+    border-bottom: 1px solid #fff;
+}
+@media (min-width:320px) and (max-width:767px){
+    .navBarSection .navbar-nav li:hover{
+        background-color: #2b5468;
+    }
+    .navBarSection .navbar-nav li:hover a{
+        color: #fff;
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    .navBarSection .navbar-nav li{
+        padding: 0 10px;
+    } 
+    .navBarSection .navbar-nav li:hover{
+        background-color: #2b5468;
+    }
+    .navBarSection .navbar-nav li:hover a{
+        color: #fff;
+    }
+}
+.navBarSection .navbar-nav li a{
+    color: #fff;
+}
+@media (min-width:992px) and (max-width:1199px){
+    .navBarSection .navbar-nav li a{
+       font-size: 14px;
+    }
+}
+@media (min-width:320px) and (max-width:767px){
+    .navBarSection .navbar-nav li a{
+        color: #2b5468;
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    .navBarSection .navbar-nav li a{
+        color: #2b5468;
+    }
+}
+.navBarSection .navbar-nav li img{
+    width: 30px;
+    height: 30px;
+}
+ /* navBar Section end */
+
+ /* main Section start */
+ .mainSection{
+     padding-top: 30px;
+     height: 85vh;
+ }
+ .mainSection .breadcrumb{
+     background-color: transparent;
+ }
+ .mainSection .breadcrumb a{
+     color:#6c757d;
+ }
+ 
+ @media (min-width:320px) and (max-width:767px) {
+    .mainSection .breadcrumb a{
+        font-size: 12px;
+    }
+    .mainSection .breadcrumb li{
+        font-size: 14px;
+    }
+    
+ }
+ @media (min-width:768px) and (max-width:991px){
+    .mainSection .breadcrumb a{
+        font-size: 12px;
+    }
+    .mainSection .breadcrumb li{
+        font-size: 14px;
+    }
+    
+ 
+ }
+ .breadcrumb-item+.breadcrumb-item::before {
+    float:right;
+ }
+ .mainSection .details{
+     background-color: #fff;
+     border-radius: 10px;
+     padding:15px 10px;
+     text-align: center;
+     margin-left: 20px;
+}
+@media (min-width:320px) and (max-width:767px){
+    .mainSection .details{
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    } 
+    .mainSection .details h6{
+        font-size: 14px;
+    }
+    .mainSection .details p{
+        font-size: 12px;
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    .mainSection .details h6{
+        font-size: 14px;
+    }
+    .mainSection .details p{
+        font-size: 12px;
+    }
+}
+.mainSection h4{
+    font-size: 20px;
+}
+ .mainSection .details img{
+    width: 100px;
+    height: 100px;
+ }
+ .mainSection h4{
+     margin-bottom: 30px;
+ }
+ @media (min-width:320px) and (max-width:767px) {
+    .mainSection h4{
+        font-size: 20px;
+    }
+ }
+ @media (min-width:768px) and (max-width:991px){
+    .mainSection h4{
+        font-size: 20px;
+    }
+ }
+ 
+ .mainSection .details h6{
+     margin-top: 10px;
+     font-weight: bold;
+ }
+ .mainSection .details p{
+     color: gray;
+ }
+ .mainSection .date{
+     background-color: #fff;
+     border-radius: 10px;
+     padding:15px 30px;
+     padding-top: 40px;
+     font-weight: bold;
+     position: relative;
+ }
+ @media (min-width:320px) and (max-width:767px){
+    .mainSection .date{
+        width: 200px;
+        height: 200px;
+        margin-top: 20px;
+        margin: 0 auto;
+    } 
+    .mainSection .date .imgDiv{
+        display: none;
+    }
+    .mainSection .date h3{
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .mainSection .date p{
+        font-size: 12px;
+        font-weight: normal;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px){
+    .mainSection .date h3{
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .mainSection .date p{
+        font-size: 14px;
+        font-weight: normal;
+    }
+}
+ .mainSection .date .imgDiv{
+     position: absolute;
+     top: 20px;
+     left: 20px;
+ }
+ .mainSection .date img{
+    width: 150px;
+    height: 150px;
+ }
+ .mainSection .classfication p{
+     margin-top: 20px;
+     font-weight: bold;
+ }
+ .mainSection .classfication input{
+   width: 100%;
+   border-radius:5px ;
+   padding: 2px 20px;
+   margin-bottom: 10px;
+   border: 1px solid rgb(187, 185, 185);
+   font-size: 14px;
+   position: relative;
+}
+@media (min-width:768px) and (max-width:991px){
+    .mainSection .classfication input{
+        font-size: 12px;
+        padding: 2px 15px;
+    }
+}
+
+.mainSection .classfication input::placeholder{
+    color: #e9ecef;
+}
+.mainSection .classfication i{
+    position: absolute;
+    top:65px;
+    left: 25px;
+    color: #d0d3d6;
+}
+.mainSection .classfication i:nth-of-type(2){
+    top:102px;
+}
+.mainSection .classfication i:nth-of-type(3){
+    top:140px;
+}
+.mainSection .classfication i:hover{
+    cursor: pointer;
+}
+.mainSection .classfication input::placeholder{
+    color: gray;
+}
+.mainSection .classDetails{
+    padding: 20px;
+}
+.mainSection .classDetails .search{
+    width: 665px;
+    background-color: #fff;
+    border-radius:15px ;
+    border: none;
+    padding:5px 30px;
+    
+}
+@media (min-width:320px) and (max-width:767px) {
+    .mainSection .classDetails .search{
+       width: 100%; 
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    .mainSection .classDetails .search{
+        width: 110%; 
+     }
+}
+@media (min-width:992px) and (max-width:1199px){
+    .mainSection .classDetails .search{
+        width: 100%; 
+     }
+}
+.mainSection .classDetails form{
+    position: relative;
+}
+.mainSection .classDetails .icon{
+    position: absolute;
+    color: #cccccc;
+    top: 10px;
+    right: 10px;
+}
+.mainSection .classDetails .icon1{
+    position: absolute;
+    color: #cccccc;
+    top: 10px;
+    left: -20px;
+    transform: rotate(180deg);
+}
+@media (min-width:320px) and (max-width:767px) {
+    .mainSection .classDetails .icon1{
+        left: 20px; 
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    .mainSection .classDetails .icon1{
+        left: 0px; 
+    }
+}
+@media (min-width:992px) and (max-width:1199px){
+    .mainSection .classDetails .icon1{
+        left: 20px; 
+    }
+}
+.mainSection .iconDiv{
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    left: 0;
+    top:52px;
+    z-index: 3;
+}
+
+.mainSection .iconDiv ul{
+  list-style-type: none;
+}
+.mainSection .iconDiv ul li{
+    font-size: 14px;
+}
+.mainSection .iconDiv ul li:nth-of-type(2){
+    margin-bottom: 10px;
+}
+.mainSection .classDetails .icon1:hover{
+    cursor: pointer;
+}
+.mainSection .box{
+    margin-top: 20px;
+    width: 100%;
+}
+.mainSection .subBox {
+    width: 665px;
+    background-color: #fff;
+    padding: 15px 20px;
+    border-radius:5px ;
+    border-bottom: 1px solid #ccc;
+
+}
+@media (min-width:320px) and (max-width:767px) {
+    .mainSection .subBox{
+       width: 100%; 
+    }
+    
+}
+@media (min-width:768px) and (max-width:991px){
+    .mainSection .subBox{
+        width: 110%; 
+     }
+}
+@media (min-width:992px) and (max-width:1199px){
+    .mainSection .subBox{
+       width: 100%;
+     }
+}
+.classDetails .subBox h6{
+    color: #2b5468;
+}
+@media (min-width:320px) and (max-width:767px){
+    .classDetails .subBox h6{
+        font-size: 12px;
+    }
+
+}
+@media (min-width:768px) and (max-width:991px){
+    .classDetails .subBox h6{
+        font-size: 12px;
+    }
+}
+@media (min-width:992px) and (max-width:1199px){
+    .classDetails .subBox h6{
+        font-size: 14px;
+    }
+}
+.classDetails .subBox p{
+    font-size: 14px;
+}
+@media (min-width:320px) and (max-width:767px){
+    .classDetails .subBox p{
+        font-size: 12px;
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    .classDetails .subBox p{
+        font-size: 12px;
+    }
+}
+@media (min-width:992px) and (max-width:1199px){
+    .classDetails .subBox p{
+        font-size: 12px;
+    }
+}
+.mainSection .subBox ul{
+list-style-type: none;
+}
+.mainSection .subBox ul li{
+    display: inline;
+    margin-left: 20px;
+    font-size: 12px;
+    color: #8f8e93;
+}
+@media (min-width:320px) and (max-width:767px){
+    .mainSection .subBox ul li{
+        font-size:8px;
+    }
+}
+.mainSection .subBox ul li i{
+    margin-left: 8px;
+}
+.mainSection .subBox .sub{
+    float: left;
+    clear: both;
+    margin-top:-100px;
+}
+
+.mainSection .subBox .sub i{
+    border: 1px solid #ccc;
+    color: #8c8c8c;
+    font-size: 11px;
+    padding:4px;
+    border-radius: 50%;
+    margin-left: 5px;
+    font-weight: bold;
+}
+.mainSection .subBox .sub i:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: #8f8e93;
+}
+ /* main Section end */
+ 
